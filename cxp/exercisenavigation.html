@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Background Image Example</title>
+    <link rel="stylesheet" href="stylesnavbar.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-item">10</div>
+      <div class="nav-item">9</div>
+      <div class="nav-item">8</div>
+      <div class="nav-item">7</div>
+      <div class="nav-item">6</div>
+      <div class="nav-item">5</div>
+      <div class="nav-item">4</div>
+      <div class="nav-item">3</div>
+      <div class="nav-item">2</div>
+      <div class="nav-item">1</div>
+      <div class="nav-item">0</div>
+    </div>
+
+    <!-- White Circle -->
+    <div class="white-circle" onclick="toggleInfoBox()"></div>
+
+    <!-- Hidden info box -->
+    <div class="info-box" id="infoBox">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+      tempor.
+    </div>
+
+    <script>
+      // Function to toggle the visibility of the info box
+      function toggleInfoBox() {
+        const infoBox = document.getElementById("infoBox");
+        // Toggle the 'visible' class to show or hide the box
+        if (infoBox.classList.contains("visible")) {
+          infoBox.classList.remove("visible");
+        } else {
+          infoBox.classList.add("visible");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+/* styles.css */
+
+/* Body styling for background */
+body {
+  background-image: url("file:///E:/NTT/cxp/assets/floor_bg_1.jpg");
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  overflow: hidden; /* Prevent scrolling */
+  justify-content: flex-end; /* Align navbar to the right */
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  padding: 50px;
+  height: 100vh; /* Take the full height of the viewport */
+  width: 60px;
+  background-color: rgba(0, 0, 0, 0.6);
+  overflow: hidden; /* Prevent scrolling */
+  max-height: 10%;
+}
+
+/* Individual nav items */
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0;
+  width: 100%; /* Take full width of the navbar */
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+  color: white;
+  font-size: 1.2em;
+  border: 1px solid white;
+  transition: all 0.3s ease; /* Smooth resizing */
+  box-sizing: border-box; /* Include padding and border in element's width and height */
+}
+
+.nav-item:hover {
+  background-color: lightgray;
+}
+
+.white-circle {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 250px;
+  left: 750px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.white-circle:hover {
+  background-color: lightgray;
+}
+
+/* Hidden box for the "Lorem Ipsum" text when the white circle is clicked */
+.info-box {
+  display: none;
+  position: absolute;
+  top: 300px; /* Positioned it below the white circle */
+  left: 800px;
+  width: 200px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.info-box.visible {
+  display: block;
+}
